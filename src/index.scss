@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "SBSansDisplay";
+  font-style: normal;
+  font-weight: 400, 700;
+  src: url("assets/fonts/SBSansDisplayRegular.woff2") format("woff2"),
+       url("assets/fonts/SBSansDisplaySemiBold.woff2") format("woff2")
+}
+
+@font-face {
+  font-family: "SBSansInterface";
+  font-style: normal;
+  font-weight: 400, 700;
+  src: url("assets/fonts/SBSansInterface-Regular.woff2") format("woff2"),
+       url("assets/fonts/SBSansInterface-Semibold.woff2") format("woff2")
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'SBSansInterface', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 900px;
+  height: 704px;
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+  padding: 25px;
+  overflow: auto;
+  position: relative;
+}
+
+.label {
+  color: #333333;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.error {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.48);
+}
+
+
+.shortInput {
+  width: 300px !important;
+  background-color: transparent !important;
+}

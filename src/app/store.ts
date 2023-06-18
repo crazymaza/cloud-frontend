@@ -1,9 +1,17 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import mainScreen from '../coponents/firstScreenMain/reducer';
+import stepOne from '../coponents/stepOne/reducer';
+import stepTwo from '../coponents/stepTwo/reducer';
+import stepThree from '../coponents/stepThree/reducer';
+import modal from '../coponents/modal/reduser';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    mainScreen,
+    stepOne,
+    stepTwo,
+    stepThree,
+    modal
   },
 });
 

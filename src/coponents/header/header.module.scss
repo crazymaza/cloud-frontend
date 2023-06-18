@@ -1,0 +1,56 @@
+.header {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-template-rows: 50px;
+    grid-template-areas:
+        "avatar name name name"
+        "avatar link link link";
+    gap: 0 24px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    padding-bottom: 25px;
+
+    .avatar {
+        grid-area: avatar;
+        max-width: 52px;
+        max-height: 52px;
+        font-size: 40px;
+        line-height: 52px;
+        padding: 14px;
+        background-color: #D5E4F7;
+        border-radius: 50%;
+    }
+
+    .fullName {
+        grid-area: name;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .links {
+        grid-area: link;
+        display: flex;
+        gap: 16px;
+
+        .link {
+            color: #5558FA;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                padding-right: 5.6px;
+            }
+
+            span {
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}

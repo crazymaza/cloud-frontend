@@ -1,0 +1,102 @@
+.stepper {
+    width: 680px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 110px;
+
+    &.half {
+        background: linear-gradient(to right,#5558FA 0 51%, rgba(0, 0, 0, 0.08) 51%);
+    }
+
+    &.full {
+        background: #5558FA;
+    }
+
+    .firstStep,
+    .secondStep,
+    .thirdStep {
+        position: absolute;
+        top: -4px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #A6A6A6;
+
+        &.activeStep::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        &::after {
+            color: #666666;
+        }
+
+        &.activeStep::after, &.completedStep::after {
+            color: #5558FA;
+        }
+
+        &.completedStep::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 25%;
+            left: 21%;
+            width: 7px;
+            height: 4px;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+            border-radius: 10%;
+            transform: rotate(-45deg);
+        }
+    }
+
+    .activeStep,
+    .completedStep {
+        background: #5558FA;
+    }
+
+    .firstStep {
+        left: -1px;
+
+        &::after {
+            content: '1';
+            position: absolute;
+            top: 16px;
+            left: 4px;
+            font-size: 14px;
+        }
+    }
+
+    .secondStep {
+        left: 50%;
+
+        &::after {
+            content: '2';
+            position: absolute;
+            top: 16px;
+            left: 4px;
+            font-size: 14px;
+        }
+    }
+
+    .thirdStep {
+        right: -1px;
+
+        &::after {
+            content: '3';
+            position: absolute;
+            top: 16px;
+            left: 4px;
+            font-size: 14px;
+        }
+    }
+}

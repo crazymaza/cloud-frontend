@@ -1,0 +1,55 @@
+.labelWithInput {
+    display: flex;
+    flex-direction: column;
+
+    .formLabel {
+        color: #333333;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .inputWrapper {
+        position: relative;
+        width: fit-content;
+        margin: 8px 12px 0 0;
+
+        .formInput {
+            box-sizing: border-box;
+            width: 400px;
+            height: 44px;
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            border-radius: 4px;
+            padding: 12px 32px 12px 12px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .cleanButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+
+    .error {
+        margin-top: 8px;
+        margin-bottom: 24px;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.48);
+    }
+
+    .visually-hidden {
+        visibility: hidden;
+    }
+
+}
