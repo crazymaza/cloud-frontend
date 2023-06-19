@@ -23,6 +23,10 @@
             padding: 12px 32px 12px 12px;
             font-size: 14px;
             line-height: 20px;
+
+            @media screen and (max-width: '566px') {
+                width: 290px;
+            }
         }
 
         .cleanButton {

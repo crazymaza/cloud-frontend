@@ -28,12 +28,20 @@ body {
 
 .app {
   width: 900px;
-  height: 704px;
+  height: 100vh;
   border-radius: 12px;
   box-shadow: 0 0 5px rgb(0 0 0 / 50%);
   padding: 25px;
   overflow: auto;
   position: relative;
+
+  @media screen and (max-width: '975px') {
+    width: 500px;
+  }
+
+  @media screen and (max-width: '566px') {
+    width: 300px;
+  }
 }
 
 .label {
@@ -55,4 +63,7 @@ body {
 .shortInput {
   width: 300px !important;
   background-color: transparent !important;
+  @media screen and (max-width: '566px') {
+    width: 250px !important;
+  }
 }

@@ -1,18 +1,30 @@
 .stepWrapper {
     display: flex;
     flex-direction: column;
-    padding: 110px 110px 20px 110px;
+    padding: 60px 110px 20px 110px;
     box-sizing: border-box;
+    @media screen and (max-width: '566px') {
+        padding: 5px;
+        align-items: center;
+    }
 
     .startForm {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: '566px') {
+            align-items: center;
+        }
 
         .buttonsWrapper {
             width: 100%;
             display: flex;
             justify-content: space-between;
             margin-top: 67px;
+
+            @media screen and (max-width: '566px') {
+                width: 90%;
+                justify-content: space-around;
+            }
         }
 
         .button {

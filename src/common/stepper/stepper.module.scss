@@ -1,9 +1,10 @@
 .stepper {
-    width: 680px;
+    width: 90%;
     height: 8px;
     background: rgba(0, 0, 0, 0.08);
-    position: fixed;
-    top: 110px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 10px;
 
     &.half {
         background: linear-gradient(to right,#5558FA 0 51%, rgba(0, 0, 0, 0.08) 51%);
